@@ -59,6 +59,8 @@ Output:
   'wind10m_max': 3}]
 ```
 
+Check <https://github.com/Yeqzids/7timer-issues/wiki/Wiki> for `wind10m_max` scales.
+
 ### Get forecast for any geographic location
 
 Proximity of São Paulo, Brazil:
