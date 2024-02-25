@@ -4,7 +4,12 @@ Get free weather forecast from www.7timer.info (no registration or token needed)
 
 ## Install
 
-Clone this repo and install dependencies from `requirements.txt`.
+```console
+git clone https://github.com/epogrebnyak/quickweather.git
+cd quickweather
+pip install -e .
+pip install -r requirements.txt
+```
 
 ## Example
 
