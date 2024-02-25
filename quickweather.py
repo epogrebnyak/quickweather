@@ -26,7 +26,7 @@ class Location:
         if r.text:
             return r.json()["dataseries"]
         else:
-            print("Empty response, try later, the URL was:")
+            print("Empty response, the URL was:")
             print(r.url)
             print(self.weather_url)
 
@@ -73,6 +73,7 @@ def query_civil_weather(latitude, longitude):
 
 
 def weather_at_airport(iata_code: str):
+    """Get weather forecast by IATA airport code."""
     return Airport(iata_code).get_weather()
 
 
@@ -85,6 +86,14 @@ class Airport:
     @classmethod
     def dataframe(cls):
         return airport_df()
+
+    @classmethod
+    def random(cls):
+        from random import choice
+        iata_code = choice(airport_df().iata.values) 
+        return cls(iata_code)
+
+
 
     @property
     def dict(self):

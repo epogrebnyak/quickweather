@@ -5,6 +5,16 @@ Get free weather forecast from www.7timer.info (no registration or token needed)
 
 Let's keep it a secret.
 
+## TODO: must provide header 
+
+Если мы запускаем `Airport.random().get_weather()`, то получаем
+пустой ответ. Если по URL запроса ходили через браузер,
+то похоже ответ кешируется и будет доступен какое-то время 
+через программный доступ.
+
+Вопрос - можно ли приделать хедеры к запросу, чтобы эмулировать
+как будто к серверу обращается браузер.
+
 ## Example
 
 ### Pick an airport by IATA code
