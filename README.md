@@ -78,6 +78,6 @@ pprint(weather[:3])
 
 Many thanks to:
 
-- <www.7timer.info> for keeping API alive, open and free,
+- <https://www.7timer.info> for keeping API alive, open and free,
 - <https://github.com/mborsetti/airportsdata> for the IATA airport data,
 - `curl wttr.in` for being a trendsetter.
