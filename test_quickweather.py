@@ -6,7 +6,7 @@ def test_sheremetyevo():
 
 
 def test_weather():
-    r = Airport("SVO").location._query()
+    r = Airport("SVO").location.query()
     print(r.url)
     print(r.text)
     assert len(r.json()["dataseries"]) == 7
