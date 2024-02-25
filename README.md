@@ -1,6 +1,6 @@
 # quickweather
-Get free weather forecast from www.7timer.info (no registration or token needed).
 
+Get free weather forecast from www.7timer.info (no registration or token needed).
 
 ## Install
 
@@ -38,7 +38,7 @@ Output:
 Limit forecast to 3 days (out of 7):
 
 ```python
-weather = a.get_weather()[:3] 
+weather = a.get_weather()[:3]
 pprint(weather)
 ```
 
@@ -64,7 +64,7 @@ Output:
 Proximity of São Paulo, Brazil:
 
 ```python
-weather = Location(latitude=-23, longitude=-43).get_weather() 
+weather = Location(latitude=-23, longitude=-43).get_weather()
 pprint(weather[:3])
 ```
 
@@ -74,11 +74,10 @@ pprint(weather[:3])
 > queries and not enough computer resources to handle them.
 > Please do not make too many queries for <www.7timer.info> using this or other code.
 
-
 ## Aknowledgements
 
 Many thanks to:
 
 - <www.7timer.info> for keeping API alive, open and free,
-- <https://github.com/mborsetti/airportsdata> for the IATA airport data,  
+- <https://github.com/mborsetti/airportsdata> for the IATA airport data,
 - `curl wttr.in` for being a trendsetter.
