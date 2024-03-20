@@ -43,7 +43,7 @@ Output:
 Limit forecast to 3 days (out of 7):
 
 ```python
-weather = a.get_weather()[:3]
+weather = Airport("UEN").get_weather()[:3]
 pprint(weather)
 ```
 
@@ -87,4 +87,4 @@ Many thanks to:
 
 - <https://www.7timer.info> for keeping API alive, open and free,
 - <https://github.com/mborsetti/airportsdata> for the IATA airport data,
-- `curl wttr.in` for being a trendsetter.
+- [`curl wttr.in`](https://wttr.in/:help?lang=ru) for inspiration.
